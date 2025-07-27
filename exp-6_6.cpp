@@ -1,0 +1,20 @@
+//UPLOAD
+//Name: Nishka Ranadive
+//PRN: 24070123082
+//Exp-6
+
+//Program-6
+#include <iostream>
+using namespace std;
+
+int main() {
+
+//Outer Loop
+for(int i=1; i<=2; ++i){
+    cout<<"Outer:"<<i<<"\n";
+
+    for(int j=1; j<=3; ++j){
+        cout<<"Inner:"<<j<<"\n";
+    }
+}
+}

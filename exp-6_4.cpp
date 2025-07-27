@@ -1,0 +1,74 @@
+//Name: Nishka Ranadive
+//PRN: 24070123082
+//Exp-6
+
+//Program-4
+#include <iostream>
+#include<string>
+using namespace std;
+int main(){
+    int con=0;
+    string pswd,con_pswd;
+pswd_set:
+    while(con==0){
+    cout << "Enter your Password:";
+    cin >> pswd;
+    if(pswd.length() < 8){
+        cout << "The Password must contain at least 8 characters!"<< endl<< endl;
+        goto pswd_set;
+    }
+pswd_conf:
+    cout << "Please confirm your Password:";
+    cin >> con_pswd;
+   
+    if(pswd == con_pswd){
+        cout << "Password created successfully!"<< endl<< endl;
+        con=1;
+    }
+    else{
+        cout << "Password not matched!" << endl<< endl;
+        goto pswd_conf;
+    }
+    }
+    string password;
+    while(1){
+        cout << "Enter your password(enter q to quit):";
+        cin >> password;
+        if(password == pswd){
+            cout << "ACCESS GRANTED!"<< endl<< endl;
+        }
+        else if(password=="q"){
+            cout << "QUITTED"<< endl<< endl;
+            break;
+        }
+        else{
+            cout << "Wrong Password! Try Again."<< endl<< endl;
+        }
+    }
+  return 0;
+}
+
+
+/*==========OUTPUTS==========
+Enter your Password:nishka@082
+Please confirm your Password:nishka@082
+Password created successfully!
+
+Enter your password(q to exit):nishka@082
+ACCESS GRANTED!
+
+
+Enter your Password:nishka@082
+Please confirm your Password:nishka@082
+Password created successfully!
+
+Enter your password(q to exit):nishka
+Wrong Password! Try Again.
+
+
+Enter your Password:nishka
+The Password must contain at least 8 characters!
+
+Enter your password(enter q to quit):q
+QUITTED
+*/
