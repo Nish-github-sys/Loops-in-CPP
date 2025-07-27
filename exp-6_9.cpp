@@ -1,0 +1,21 @@
+//UPLOAD
+//Name: Nishka Ranadive
+//PRN: 24070123082
+//Exp-6
+
+//Program-9
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i, j;
+    int n=5;
+     for(i=n; i>=1; i--)
+    {
+        for(j=1; j<=i; j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
