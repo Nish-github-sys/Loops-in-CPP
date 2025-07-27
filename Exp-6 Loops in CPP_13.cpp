@@ -1,8 +1,8 @@
-#include <iostream>
-using namespace std;
-//Patel Vishwas
-//24070123072
-//A3
+//Name: Nishka Ranadive
+//PRN: 24070123082
+//Exp-6
+
+//Program-13
 #include <iostream>
 using namespace std;
 int main(){
@@ -31,6 +31,21 @@ int main(){
     }
     cout << "\n";  
   }
+}
+
+
+/*==========OUTPUTS==========
+Enter Number:5
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+    */
 
   return 0;
 }
